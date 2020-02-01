@@ -133,3 +133,7 @@ await _dispatcher.Send(command);
 ## Remarks
 
 The examples above don't show the implementation of the `Dispatcher`. One example on how this can be done can be found in the `samples` of the project.
+
+## TODO
+
+Make it packable
