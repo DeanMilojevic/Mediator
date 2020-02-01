@@ -6,7 +6,7 @@ namespace Mediator.AspNetCore.DependencyInjection.Extensions
     {
         public static IServiceCollection AddDispatcher(this IServiceCollection services)
         {
-            services.AddSingleton<IDispatcher, ServiceCollectionDispatcher>();
+            services.AddSingleton<IDispatcher, ServiceProviderDispatcher>();
 
             return services;
         }
