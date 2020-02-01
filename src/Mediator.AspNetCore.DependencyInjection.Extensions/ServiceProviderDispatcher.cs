@@ -25,23 +25,18 @@ namespace Mediator.AspNetCore.DependencyInjection.Extensions
 
             EnsureHandlerExists(commandHandler, "The command handler is not registered.");
 
-            await commandHandler.Handle(command);
+            await commandHandler.Handle((dynamic)command);
         }
 
         public async Task<T> Send<T>(IQuery<T> query)
         {
-            if (query is null)
-            {
-                throw new ArgumentNullException(nameof(query));
-            }
-
             var genericType = typeof(IQueryHandler<,>).MakeGenericType(query.GetType(), typeof(T));
 
             var queryHandler = (dynamic)_serviceProvider.GetService(genericType);
 
             EnsureHandlerExists(queryHandler, "The query handler is not registered.");
 
-            return (T) await queryHandler.Handle(query);
+            return await queryHandler.Handle((dynamic)query);
         }
 
         private void EnsureHandlerExists(dynamic handler, string errorMessage)

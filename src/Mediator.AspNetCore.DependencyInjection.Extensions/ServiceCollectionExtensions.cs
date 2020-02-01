@@ -20,7 +20,7 @@ namespace Mediator.AspNetCore.DependencyInjection.Extensions
             return services;
         }
 
-        public static IServiceCollection AddQueryHandler<TResult, TQuery, Handler>(this IServiceCollection services)
+        public static IServiceCollection AddQueryHandler<TQuery, TResult, Handler>(this IServiceCollection services)
             where Handler : class, IQueryHandler<TQuery, TResult>
             where TQuery : class, IQuery<TResult>
         {

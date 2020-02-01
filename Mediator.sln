@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.AspNetCore.Depende
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "src\Mediator\Mediator.csproj", "{C6E0D424-F1E4-4C39-B12B-11267362BDFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{6E4BF614-A3B3-411B-8555-028EF9CA4C5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator.AspNetCore.Example", "samples\Mediator.AspNetCore.Example\Mediator.AspNetCore.Example.csproj", "{7950C785-BDFD-493D-9DBF-F2C0081BF049}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +50,22 @@ Global
 		{C6E0D424-F1E4-4C39-B12B-11267362BDFE}.Release|x64.Build.0 = Release|Any CPU
 		{C6E0D424-F1E4-4C39-B12B-11267362BDFE}.Release|x86.ActiveCfg = Release|Any CPU
 		{C6E0D424-F1E4-4C39-B12B-11267362BDFE}.Release|x86.Build.0 = Release|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Debug|x64.Build.0 = Debug|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Debug|x86.Build.0 = Debug|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Release|x64.ActiveCfg = Release|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Release|x64.Build.0 = Release|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Release|x86.ActiveCfg = Release|Any CPU
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C668A463-3C8F-40C0-BB47-29C2117D56D6} = {1C464A1C-3927-4E1D-9814-B95EDA00AAB1}
 		{C6E0D424-F1E4-4C39-B12B-11267362BDFE} = {1C464A1C-3927-4E1D-9814-B95EDA00AAB1}
+		{7950C785-BDFD-493D-9DBF-F2C0081BF049} = {6E4BF614-A3B3-411B-8555-028EF9CA4C5B}
 	EndGlobalSection
 EndGlobal
