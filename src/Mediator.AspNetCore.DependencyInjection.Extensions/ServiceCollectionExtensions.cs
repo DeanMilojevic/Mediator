@@ -10,5 +10,23 @@ namespace Mediator.AspNetCore.DependencyInjection.Extensions
 
             return services;
         }
+
+        public static IServiceCollection AddCommandHandler<TCommand, Handler>(this IServiceCollection services)
+            where Handler : class, ICommandHandler<TCommand>
+            where TCommand : class, ICommand
+        {
+            services.AddSingleton<ICommandHandler<TCommand>, Handler>();
+
+            return services;
+        }
+
+        public static IServiceCollection AddQueryHandler<TResult, TQuery, Handler>(this IServiceCollection services)
+            where Handler : class, IQueryHandler<TQuery, TResult>
+            where TQuery : class, IQuery<TResult>
+        {
+            services.AddSingleton<IQueryHandler<TQuery, TResult>, Handler>();
+
+            return services;
+        }
     }
 }
