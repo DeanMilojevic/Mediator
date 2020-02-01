@@ -116,16 +116,19 @@ public class SampleQueryHandler : IQueryHandler<SampleQuery, SampleQueryResult>
 Example of usage:
 
 ```csharp
+private readonly ILogger _logger;
 private readonly IDispatcher _dispatcher;
 
 ...
 
-var command = new SampleCommand
+var query = new SampleQuery
 {
-    Value = "Value of the Sample Command"
+    Value = "Value of the Sample Query"
 };
 
-await _dispatcher.Send(command);
+var result = await _dispatcher.Send(query);
+
+_logger.LogInformation(result.Value);
 
 ...
 ```
