@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Mediator.AspNetCore.DependencyInjection.Extensions</id>
+        <version>1.0.1</version>
+        <description>Package contains the DI extensions and implementation of the IDispatcher</description>
+        <authors>Dean</authors>
+
+        <dependencies>
+            <group targetFramework="netstandard2.1">
+                <dependency id="Mediator" version="1.0.0" />
+                <dependency id="Microsoft.CSharp" version="4.7.0" />
+                <dependency id="Microsoft.Extensions.DependencyInjection" version="3.1.1" />
+                <dependency id="Microsoft.Extensions.Logging" version="3.1.1" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="/Users/dean/Desktop/code/cqrs/src/Mediator.AspNetCore.DependencyInjection.Extensions/bin/Debug/netstandard2.1/Mediator.AspNetCore.DependencyInjection.Extensions.dll" target="lib/netstandard2.1" />
+    </files>
+</package>

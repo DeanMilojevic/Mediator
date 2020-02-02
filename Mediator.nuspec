@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Mediator</id>
+        <version>1.0.0</version>
+        <description>Package contains the set of interface to enable CQRS</description>
+        <authors>Dean</authors>
+
+        <dependencies>
+            <group targetFramework="netstandard2.1"/>
+        </dependencies>
+
+    </metadata>
+    <files>
+        <file src="/Users/dean/Desktop/code/cqrs/src/Mediator/bin/Debug/netstandard2.1/Mediator.dll" target="lib/netstandard2.1" />
+    </files>
+</package>
