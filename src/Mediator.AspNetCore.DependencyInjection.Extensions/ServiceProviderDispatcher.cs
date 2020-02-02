@@ -30,6 +30,11 @@ namespace Mediator.AspNetCore.DependencyInjection.Extensions
 
         public async Task<T> Send<T>(IQuery<T> query)
         {
+            if (query is null)
+            {
+                throw new ArgumentNullException(nameof(query));
+            }
+
             var genericType = typeof(IQueryHandler<,>).MakeGenericType(query.GetType(), typeof(T));
 
             var queryHandler = (dynamic)_serviceProvider.GetService(genericType);
